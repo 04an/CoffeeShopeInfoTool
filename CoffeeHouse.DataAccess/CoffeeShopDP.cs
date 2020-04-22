@@ -9,6 +9,7 @@ namespace CoffeeHouse.DataAccess
         {
             yield return new CoffeeShop { Location = "Warsaw", BeansInStockInKg = 191, PaperCupsInStock = 200 };
             yield return new CoffeeShop { Location = "Berlin", BeansInStockInKg = 91, PaperCupsInStock = 50 };
+            yield return new CoffeeShop { Location = "Bergen", BeansInStockInKg = 12, PaperCupsInStock = 5 };
             yield return new CoffeeShop { Location = "Paris", BeansInStockInKg = 121, PaperCupsInStock = 101 };
         }
     }
