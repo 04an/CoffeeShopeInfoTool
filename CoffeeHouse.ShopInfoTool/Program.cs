@@ -9,7 +9,7 @@ namespace CoffeeHouse.ShopInfoTool
         {
             Console.WriteLine("Coffee House - Shop info tool!");
 
-            Console.WriteLine("Write 'help' to list available commands");
+            Console.WriteLine("Write 'help' to list available coffe shop commands");
 
             var coffeeShopDP = new CoffeeShopDP();
 
