@@ -9,13 +9,19 @@ namespace CoffeeHouse.ShopInfoTool
         {
             Console.WriteLine("Coffee House - Shop info tool!");
 
-            Console.WriteLine("Write 'help' to list available coffe shop commands");
+            Console.WriteLine("Write 'help' to list available coffe shop commands, " + 
+                "write 'quit' to exit application");
 
             var coffeeShopDP = new CoffeeShopDP();
 
             while (true)
             {
                 var line = Console.ReadLine();
+
+                if (string.Equals("quit",line, StringComparison.OrdinalIgnoreCase))
+                {
+                    break;
+                }
 
                 var coffeeShops = coffeeShopDP.LoadCoffeShops();
 
